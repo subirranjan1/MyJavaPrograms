@@ -10,9 +10,14 @@ public class Main {
 		list.add("Subir2");
 		list.add("Subir3");
 		list.display();
-		if(!list.findElement("Subirabcd")){
-			System.out.println("Not found");
-		}
-		else System.out.println("found");
+//		if(!list.findElement("Subirabcd")){
+//			System.out.println("Not found");
+//		}
+//		else System.out.println("found");
+		System.out.println("*******");
+		list.removeNodebyValue("Hello");
+		//list.removeNodebyValue("Subir2");
+		//System.out.println(list.removeNodebyValue("Subir2"));
+		list.display();
 	}
 }

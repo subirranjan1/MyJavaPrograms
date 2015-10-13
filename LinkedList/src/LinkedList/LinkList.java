@@ -48,6 +48,31 @@ public class LinkList{
 		}
 	}
 	
+	public boolean removeNodebyValue(Object obj){
+		if(isEmpty()){
+			return false;
+		}
+		else{
+			Node current=head;
+			Node currentNext=current.getNext();
+			if(current.getValue()==obj){
+				head=currentNext;
+				return true;
+			}
+			while(currentNext!=null){
+				if(currentNext.getValue()==obj){
+					//System.out.println(currentNext.getValue());
+					current.setNext(currentNext.getNext());
+					return true;
+				}
+				//System.out.println(currentNext.getValue());
+				currentNext=currentNext.getNext();
+				current=current.getNext();
+			}
+			return false;
+		}
+	}
+	
 	public void display(){
 		if(isEmpty()){
 			System.out.println("List is Empty");
