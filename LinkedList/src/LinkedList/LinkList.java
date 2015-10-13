@@ -48,6 +48,19 @@ public class LinkList{
 		}
 	}
 	
+	public Object findElementbyIndex(int index){
+		Node current=head;
+		int i=1;
+		if(index>size()){
+			return -1;
+		}
+		while(i!=index){
+			current=current.getNext();
+			i++;
+		}
+		return current.getValue();
+	}
+	
 	public boolean removeNodebyValue(Object obj){
 		if(isEmpty()){
 			return false;
@@ -87,6 +100,26 @@ public class LinkList{
 		
 	}
 	
+//	public Object nextvalue(LinkList list){
+//		list.
+//		Node current=head;
+//		return current.getValue();		
+//	} 
+	
+	public int size(){
+		int size=0;
+		if(isEmpty()){
+			return size;
+		}
+		else{
+			Node current=head;
+			while(current!=null){
+				size++;
+				current=current.getNext();
+			}
+			return size;
+		}
+	}
 	public class Node{
 		public Object value;
 		public Node next;
