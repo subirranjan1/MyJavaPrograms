@@ -19,20 +19,5 @@ public class Main {
 		//list.removeNodebyValue("Subir2");
 		//System.out.println(list.removeNodebyValue("Subir2"));
 		list.display();
-		System.out.println("*******");
-		list.removeNodebyValue("Subir3");
-		//list.removeNodebyValue("Subir2");
-		//System.out.println(list.removeNodebyValue("Subir2"));
-		list.display();
-		System.out.println("*******");
-		list.removeNodebyValue("Subir1");
-		//list.removeNodebyValue("Subir2");
-		//System.out.println(list.removeNodebyValue("Subir2"));
-		list.display();
-		System.out.println("*******");
-		list.removeNodebyValue("abcd");
-		//list.removeNodebyValue("Subir2");
-		//System.out.println(list.removeNodebyValue("Subir2"));
-		list.display();
 	}
 }
