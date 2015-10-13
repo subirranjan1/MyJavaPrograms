@@ -31,23 +31,20 @@ public class LinkList{
 		}
 	}
 	
-	public void findElement(Object obj){
+	public boolean findElement(Object obj){
 		if(isEmpty()){
-			System.out.println("List is Empty");
+			return false;
 		}
 		else{
 			Node current=head;
 			while(current!=null){
 				if(current.getValue()==obj){
-					System.out.println("Element found");
-					break;
+					return true;
 				}
-				else{
-					current=current.getNext();
-				}
+				current=current.getNext();
 				//System.out.println("Element not found");
 			}
-			
+			return false;
 		}
 	}
 	

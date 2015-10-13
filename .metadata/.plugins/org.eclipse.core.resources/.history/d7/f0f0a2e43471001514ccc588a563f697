@@ -1,0 +1,11 @@
+public class LinkList{
+	
+	public LinkList(){
+		
+	}
+	public String isEmpty(){
+		return("I am subirs");
+	}
+	
+}
+

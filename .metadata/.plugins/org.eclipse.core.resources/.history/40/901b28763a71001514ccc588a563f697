@@ -1,0 +1,11 @@
+package LinkedList;
+
+public class Main {
+	public static void main(String[] args){
+		LinkList list=new LinkList();
+		//System.out.println(list.isEmpty());
+		//list.add("Hello");
+		//list.add("Subir");
+		list.display();
+	}
+}

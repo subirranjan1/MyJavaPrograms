@@ -1,0 +1,11 @@
+public class LinkList{
+	
+	public LinkList(){
+		
+	}
+	public boolean isEmpty(){
+		return(true);
+	}
+	
+}
+

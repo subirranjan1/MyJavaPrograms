@@ -1,0 +1,11 @@
+
+package LinkedList;
+
+public class LinkList{
+	public LinkList(){	
+	}
+	public String isEmpty(){
+		return("I am subir");
+	}	
+}
+

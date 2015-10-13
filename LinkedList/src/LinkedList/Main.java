@@ -10,6 +10,9 @@ public class Main {
 		list.add("Subir2");
 		list.add("Subir3");
 		list.display();
-		list.findElement("Subir");
+		if(!list.findElement("Subirabcd")){
+			System.out.println("Not found");
+		}
+		else System.out.println("found");
 	}
 }

@@ -1,0 +1,58 @@
+
+package LinkedList;
+
+public class LinkList{
+	public Node head;
+	Node current;
+	
+	public LinkList(){	
+	}
+	public boolean isEmpty(){
+		if(head==null){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}	
+	
+	public void add(Object obj){
+		
+		if(isEmpty()){
+			current=new Node(obj);
+		}
+		else{
+			while(current.getNext()!=null){
+				current=current.getNext();
+			}
+			current=new Node(obj);
+		}
+	}
+	public void display(){
+		current=head;	
+		while(current.getNext()!=null){
+			System.out.println(current.getValue());
+			current=current.getNext();
+		}
+	}
+	
+	private class Node{
+		private Object value;
+		private Node next;
+		
+		private Node(Object obj){
+			this.value=obj;
+		}
+		
+		public Node getNext(){
+			return next;
+		}
+		public void setNext(Node node){
+			next=node;
+		}
+		public Object getValue(){
+			return value;
+		}
+	}
+}
+

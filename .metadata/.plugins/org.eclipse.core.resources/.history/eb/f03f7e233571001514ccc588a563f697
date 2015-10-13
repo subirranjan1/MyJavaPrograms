@@ -1,0 +1,8 @@
+import LinkList;
+
+public class Main {
+	public static void main(String[] args){
+		LinkList list=new LinkList();
+		list.isEmpty();
+	}
+}
