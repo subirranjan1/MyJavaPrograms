@@ -2,7 +2,7 @@
 public class AddDigits {
 	public static void main(String[] args){
 		AddDigits add=new AddDigits();
-		int result=add.addDigits(1);
+		int result=add.addDigits(15);
 		System.out.println(result);
 	}
 
