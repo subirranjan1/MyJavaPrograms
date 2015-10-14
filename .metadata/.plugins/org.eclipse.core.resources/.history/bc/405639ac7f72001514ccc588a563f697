@@ -2,7 +2,7 @@
 public class AddDigits {
 	public static void main(String[] args){
 		AddDigits add=new AddDigits();
-		int result=add.addDigits(0);
+		int result=add.addDigits(1);
 		System.out.println(result);
 	}
 
@@ -22,6 +22,6 @@ public class AddDigits {
 //        	return addDigits(sum);
 //        } 
 //    	return num>9?addDigits(num/10+num%10):num;
-    	return 1 + (num - 1) % 9;/// Digitial Root Formula-Congruence /// Change 9 to (base-1) for other bases.
+    	return 1 + (num - 1) % 9;
     }
 }
