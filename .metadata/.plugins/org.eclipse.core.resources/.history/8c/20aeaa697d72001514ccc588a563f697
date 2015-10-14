@@ -17,9 +17,12 @@ public class AddDigits {
         		tens=tens*10;
         	}
             int dividend=num/tens;
+            //System.out.println("div"+dividend);
             int remainder=num%tens;
             int sum=dividend+remainder;
+            //System.out.println(sum);
         	return addDigits(sum);
+            //return if(sum<10){sum;}else{addDigits(sum);}
         } 
     }
 }

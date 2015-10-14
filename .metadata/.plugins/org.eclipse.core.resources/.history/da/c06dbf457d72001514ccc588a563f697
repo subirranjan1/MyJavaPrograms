@@ -2,12 +2,13 @@
 public class AddDigits {
 	public static void main(String[] args){
 		AddDigits add=new AddDigits();
-		int result=add.addDigits(15);
+		int result=add.addDigits(5126);
 		System.out.println(result);
 	}
 
     public int addDigits(int num) {
         int length = (int)(Math.log10(num)+1);
+        System.out.println(length);
         if(length<2){
         	return num;
         }
@@ -17,9 +18,12 @@ public class AddDigits {
         		tens=tens*10;
         	}
             int dividend=num/tens;
+            //System.out.println("div"+dividend);
             int remainder=num%tens;
             int sum=dividend+remainder;
+            //System.out.println(sum);
         	return addDigits(sum);
+            //return if(sum<10){sum;}else{addDigits(sum);}
         } 
     }
 }
