@@ -1,0 +1,32 @@
+
+public class AddDigits {
+	public static void main(String[] args){
+		AddDigits add=new AddDigits();
+		int result=add.addDigits(13);
+		System.out.println(result);
+	}
+
+    public int addDigits(int num) {
+	       return sum(num);
+	    }  
+    
+	public int sum(int num){
+        int length = (int)(Math.log10(num)+1);
+        if(length>1){
+            int tens=length-1;
+            int dividend=num/tens;
+            int remainder=num%tens;
+            int sum=dividend+remainder;
+            if(sum>10){
+                sum(sum);
+            }
+            else{
+                return sum;
+            }
+        }
+        else{
+            return num;
+        }
+        return 0;
+    }
+}

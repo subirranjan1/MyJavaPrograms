@@ -1,0 +1,30 @@
+
+public class AddDigits {
+	public static void main(String[] args){
+		AddDigits add=new AddDigits();
+		int result=add.addDigits(13);
+		System.out.println(result);
+	}
+
+    public int addDigits(int num) {
+        int length = (int)(Math.log10(num)+1);
+        //System.out.println(length);
+        if(length>1){
+            int tens=length-1;
+            int dividend=num/tens;
+            int remainder=num%tens;
+            int sum=dividend+remainder;
+            System.out.println(sum);
+        	return sum;
+//            if(sum>10){
+//	            return addDigits(sum);
+//	        }
+//	        else{
+//	            return sum;
+//	        }
+        }
+        else{
+            return num;
+        } 
+    }
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;PalindromePermutautin.java&apos; to &apos;PalindromePermutation.java&apos;&#x0D;&#x0A;- Original project: &apos;Easy_LeetCode&apos;&#x0D;&#x0A;- Original element: &apos;PalindromePermutautin.java&apos;&#x0D;&#x0A;- Renamed element: &apos;PalindromePermutation.java&apos;" description="Rename compilation unit &apos;PalindromePermutautin.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{PalindromePermutautin.java" name="PalindromePermutation.java" references="false" stamp="1444834017064" version="1.0"/>
+</session>
